@@ -144,6 +144,10 @@ type Auth {
     user: UserModel
 }
 
+type Pizza {
+    pizzaName: String
+}
+
 type Mutation {
     ########## User Mutations
     createAUser(userName: String, eMail: String, birthDate: String, password: String): Auth
@@ -295,6 +299,8 @@ type Query {
     viewAllMyMealItems: [MealItemsModel]
 
     viewAllMealItems: [MealItemsModel]
+
+    findAllPizzas: [Pizza]
 }
 `
 module.exports = typeDefs;
