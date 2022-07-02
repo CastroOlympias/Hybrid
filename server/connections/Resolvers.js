@@ -19,7 +19,7 @@ const { createAMeal, editAMeal, deleteAllMealsAndAllMealItems, deleteAMealAndAll
 // Meal Items Resolvers
 const { createAMealItem, editAMealItem, deleteAMealItem, viewAllMyMealItems, viewAllMealItems } = require('./resolvers/MealItemsResolvers')
 
-
+const { findAllPizzas } = require('./resolvers/PizzaResolver')
 
 const resolvers = {
     Mutation: {
@@ -106,6 +106,8 @@ const resolvers = {
         // Meal Items Queries
         viewAllMyMealItems,
         viewAllMealItems,
+
+        findAllPizzas
     },
 }
 module.exports = resolvers;

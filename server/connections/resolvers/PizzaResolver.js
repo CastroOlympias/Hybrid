@@ -1,4 +1,4 @@
-const { Pizza } = require('../../models/Pizza');
+const { Pizza } = require('../../collections');
 
 const pizzaResolvers = {
     findAllPizzas: async (parent, args, context) => {
